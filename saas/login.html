@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Log in — Nexa</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="auth-body">
+
+    <a href="index.html" class="logo auth-logo">
+        <span>✦</span>
+        Nexa
+    </a>
+
+
+    <main class="auth-card">
+
+        <div class="auth-heading">
+
+            <h1>
+                Welcome back
+            </h1>
+
+            <p>
+                Log in to continue to your workspace.
+            </p>
+
+        </div>
+
+
+        <!-- GOOGLE LOGIN -->
+        <button class="google-btn" id="googleBtn">
+
+            <span class="google-g">
+                G
+            </span>
+
+            Continue with Google
+
+        </button>
+
+
+        <div class="divider">
+
+            <span>
+                OR CONTINUE WITH EMAIL
+            </span>
+
+        </div>
+
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm">
+
+            <label>
+
+                Email address
+
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="you@company.com"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+
+                Password
+
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="••••••••"
+                    required
+                >
+
+            </label>
+
+
+            <div class="form-row">
+
+                <label class="check-label">
+
+                    <input type="checkbox">
+
+                    Remember me
+
+                </label>
+
+
+                <a href="#">
+                    Forgot password?
+                </a>
+
+            </div>
+
+
+            <button
+                class="btn btn-primary btn-full"
+                type="submit"
+            >
+                Continue →
+            </button>
+
+        </form>
+
+
+        <p class="auth-switch">
+
+            Don't have an account?
+
+            <a href="#" id="signupLink">
+                Create one
+            </a>
+
+        </p>
+
+
+        <p class="demo-note">
+
+            Demo authentication flow.
+            Connect Firebase or another backend
+            for real authentication.
+
+        </p>
+
+    </main>
+
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>
